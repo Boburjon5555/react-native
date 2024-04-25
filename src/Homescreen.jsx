@@ -2,7 +2,7 @@ import { View, Text, TextInput, ScrollView, Image, TouchableOpacity,  } from 're
 import { FontAwesome5 } from '@expo/vector-icons';
 import Loader from './Loader'; 
 import { useState,useEffect } from 'react';
-import AnimatedLoader from 'react-native-animated-loader';
+
 
 
 
@@ -20,14 +20,9 @@ const Homescreen = ({ route,navigation }) => {
     },[]); 
     
    
-   
-
-    return ( 
+   return ( 
         
-    
-
-        
-        <View style={{
+     <View style={{
             flex: 1,
             padding: 16,
             backgroundColor: '#FFF'
@@ -105,6 +100,7 @@ const Homescreen = ({ route,navigation }) => {
                             alignItems: 'center'
                         }}>
                             <FontAwesome5 name='star' size={24} color='#FFF' />
+                
                         </View>
                         <Text style={{
                             fontSize: 16,
@@ -130,7 +126,8 @@ const Homescreen = ({ route,navigation }) => {
                             justifyContent: 'center',
                             alignItems: 'center'
                         }}>
-                            <FontAwesome5 name='tree' size={24} color='#FFF' />
+                            <FontAwesome5 name='tree' size={24} color='#FFF' /> 
+                        
                         </View>
                         <Text style={{
                             fontSize: 16,
